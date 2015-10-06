@@ -1,0 +1,5 @@
+TSMC 65 GP //general power
+low Vth devices for digital circuits use
+
+TSMC 65 LP //low power
+high Vth for low standby/leakage current
