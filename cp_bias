@@ -1,4 +1,4 @@
 1.the bias circuits for the charge pump should be designed carefully.
-2.the length of the switch MOS of the tuning parts should be long enough to avoid gate leakage. The width should be large enough to decrease 
-the on-resistance and thus will not harm the flicker noise performance of the current source transistors.
+2.the length of the switch MOS of the tuning parts should be long enough to avoid gate leakage. 
+The width should be large enough to decrease the on-resistance and thus will not harm the flicker noise performance of the current source transistors.
 3.run the single tansistor simulation and see the flicker and thermal noise vary with the Vdsat of the saturation mosfets.
