@@ -1,0 +1,6 @@
+// from v/sprt(Hz) to dBc
+plot phase noise curve p;
+p=10exp(curve/10); //from dBc to square(V)/Hz
+do average to p;  //from curve to value
+n=p*(20e6-2e3);  //integret noise from 2kHz to 20MHz
+10*log(n); //from quare(V)/Hz to integrate dBc
