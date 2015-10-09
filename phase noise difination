@@ -1,0 +1,2 @@
+walthrough we use phase noise to describe the noise performance of VCO, 
+we should transfer it to jitter if the VCO followed by an ADC
