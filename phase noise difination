@@ -1,2 +1,6 @@
-walthrough we use phase noise to describe the noise performance of VCO, 
+1.walthrough we use phase noise to describe the noise performance of VCO, 
 we should transfer it to jitter if the VCO followed by an ADC
+
+2.The phase noise need to be minimized because the strong interferer due to reciprocal mixing will
+overlap the desired signal and corrupt it.  if the phase nosie can be compressed enough, the corruption will be negnigible.
+Even without interferer, high phase noise of LO will corrupt the signal itself.
