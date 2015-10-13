@@ -1,0 +1,25 @@
+Summary
+
+I. for BLE
+1.PLL for BLE need low loop BW because the two ports modulation require good close-in noise performance,
+and low current consumption lead to large C1 and C2.
+2.Fractional-N type ask for perfect nonlinearity, require less than 2% CP current mismatch, so introduce I_offset
+to improve the PFD/CP transfer function linearity is necessary.(in this case, the current mismatch converted to phase variation)
+3.The duration of I_offset is defined by the phase excurtion due to Delta sigma action.
+
+II. for Wi-Fi
+1.Pll for wifi usage need high loop BW because the EVM require good fan-out noise performance, and lead to high CP 
+current in case of too large R1 which generate large thermal noise.
+2.Fractional-N may ferther exacerbate the noise budget. In order to maintain the phase error, Large CP current lead to large 
+I_offset, introducing more current noise from the current source.
+
+III.common considerations
+1.The C2 in LPF should not be too small for two reasons:
+(1)the parasitic cap(about 10fF~50fF) of long metal trace betwwen CP_out and LPF_in will be merged into C2
+which may harm the stability of the loop.
+(2)the coupling caps(50fF~100fF) between power lines and LPF will introduce noise. 
+Too small C2 may lead to large splite noise voltage on LPF, which derectly input to VCO.
+so the reasonable value should be around 1pF~2pF.
+2.The RC filter in third order LPF should be tuned to achieve optimum noise suppression to delta sigma action.
+3.Place the C1 on top of the R1 is better because of 0 DC voltage applied on R1.
+4.The on resistance of switches used in programmable LPF is about 100ohm.(too low value lead to large size)
