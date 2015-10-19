@@ -1,0 +1,4 @@
+change channel from 1 to 78,(78 channels, 1MHz step), the phase error of two PFD inputs
+may larger than 2 pi, thus leave the linear region of the PFD transfer funtion, and harm
+the settling of PLL when hogging.
+should creat a look up table and use it to do the calibration to make VCO works at desired frequency.
