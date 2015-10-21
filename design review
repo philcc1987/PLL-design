@@ -1,4 +1,17 @@
-1. For resistor, the width should not be too large or the size will be a penaty.
+1. For resistor, the width should be within 1u in case of big size.
 for square sheet resitance equal to 300 ohm, 1kohm lead to 1um width and 3.33um length.
 2. Roughly the T switch resistance is 200~300 ohm.
-3. 
+3. for digital logic, use small width and multiple fingers.
+4. for MMD, connect dummy buffer to VCO negative output while use single positive output to drive MMD.
+5. find critical path of MMD, do the synchronization to fix timing issue.
+6. add mask to the PLL phase noise plot.
+7. simulate the linearity of PFD/CP.
+8. swap the R1 and C1, apply DC bias to the LPF.
+9. change Kvco and redesign the loop parameters of the Wi-Fi mode.
+10. delete the idle time control in PFD or increase the time to 3ns.
+11. plot the loop rejection for spur.
+12. modified the top symbol.
+13. merge the bias current in CP.
+14. add power down control to CP.
+15. add test MUX to feedback path and LPF.
+16. creat table with specs and simulation results.
