@@ -1,0 +1,4 @@
+1. For resistor, the width should not be too large or the size will be a penaty.
+for square sheet resitance equal to 300 ohm, 1kohm lead to 1um width and 3.33um length.
+2. Roughly the T switch resistance is 200~300 ohm.
+3. 
