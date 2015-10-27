@@ -1,0 +1,18 @@
+RF design rules: 1.Outside in(load cap, see S11) 2. Know system specs
+From john’s view:做两个架构options，并比较，论证优劣，为何选择某种。(台湾)
+Review的重要性：大家一起看，相互cover。不同process的gm区别，leakage区别。(momcap’s dirty place(15%)；current density
+system level的重要性。
+PLL： mixer TX (context impoetance)
+three critical things: power ; bias; VCO
+schmatic should be neat!
+list worst case combination(temp, coner, process)
+mismatch,coner (first order requirement)
+for long wire, coner fre is about 300~600M, may need repeator
+local decap is always important. (SILICON LAB company: reliable design)
+边写document 边做design。design时写数百张slides，最终review只有20张。
+一定要 compare结果和specs：ex. 目的是什么，怎样达到，达到程度
+for designer: You are not designing schematic, you are designing layout!
+
+NAMING: 
+digital power:DDVD
+analog power:AVDD
