@@ -1,0 +1,23 @@
+design is layout.
+post simulation 
+stress : leakage,  floating nodes --> leakage(invertor input is VDD/2 cause current)
+
+1.N-well OD(oxide diffusion)_25/OD_33 space rule:
+
+
+2.poly rule:rotation should be the same. especially for below 65nm process
+poly need dummy
+
+
+3.matching rule: common centroid, always follow stupid rule. 
+current flow should be matched,can not in different directions(in every MOS)--> use even number fingers
+space between guide ring and device should be the same(1um/2um rule)
+avoid odd number devices(avoid 3X3)
+from local to local, die to die, lot to lot
+
+4.waive layer rule:
+DRC rule
+
+digital not over design, or produce large glitch
+power down switch should made weak, large res, low current. or fuse
+large current block should have seperate GND trace.
