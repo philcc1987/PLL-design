@@ -23,3 +23,10 @@ so the reasonable value should be around 1pF~2pF.
 2.The RC filter in third order LPF should be tuned to achieve optimum noise suppression to delta sigma action.
 3.Place the C1 on top of the R1 is better because of 0 DC voltage applied on R1.
 4.The on resistance of switches used in programmable LPF is about 100ohm.(too low value lead to large size)
+
+IV.for third order filter
+R1:R3=1:2
+C1:C2=1:20
+C1:C3=1:40
+Kvco=10~15MHz for BLE
+C1 choose to be much bigger than R1 for capacitor has better process variatuion than that of resistor
