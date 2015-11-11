@@ -1,0 +1,3 @@
+1. increase the refernce frequecny, then the quantization noise will move to higher band,
+thus the low pass filter could suppress the high band noise more effectivly.
+2. decrease the loop bandwidth of PLL.
